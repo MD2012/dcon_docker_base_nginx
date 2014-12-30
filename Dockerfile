@@ -29,8 +29,8 @@ RUN apt-get install -y nginx
 
 # Remove the default Nginx configuration file
 RUN rm -v /etc/nginx/nginx.conf
-RUN rm /etc/nginx/conf.d/default.conf
-RUN rm /etc/nginx/conf.d/example_ssl.conf
+#RUN rm /etc/nginx/conf.d/default.conf
+#RUN rm /etc/nginx/conf.d/example_ssl.conf
 COPY content /usr/nginx/share/html
 COPY conf /etc/nginx
 
